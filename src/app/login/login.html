@@ -1,0 +1,21 @@
+<p>Please enter your details!!</p>
+
+<p *ngIf="registeredName">Hi {{ registeredName }}, please login.</p>
+
+<form >
+   <div>
+    <label for="username"></label>
+   <input type="text" id="username" name="username" #usernameInput>
+   </div>
+   <div>
+    <label for="password"></label>
+    <input type="password" id="password" name="password">
+   </div>
+</form>
+
+<button type="button" (click)="onLogin(usernameInput.value)">Login</button>
+
+<p>
+Don't have an account?
+<a routerLink="/register">Register</a>
+</p>
