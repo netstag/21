@@ -1,0 +1,14 @@
+# install the @angular/cli
+npm install -g @angular/cli
+
+# check cli version
+ng --version
+
+# create an app
+ng new first-ng-app # optionally use --dry-run
+
+# in our tutorial
+ng new <Proj_name> --no-standalone
+
+#generate component
+ ng generate component <comp_name> --no-standalone
